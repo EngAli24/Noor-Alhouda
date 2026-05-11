@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icon/nour.ico">
+    <link rel="apple-touch-icon" href="../icon/nour.ico">
+    <link rel="manifest" href="../data/manifest.json">
+    <meta name="theme-color" content="#0f5132">
+    <title>تسجيل الدخول | نور الهدى</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main>
+        <header class="main-header">
+            <div class="header-inner" style="justify-content: center;">
+                <a href="../index.html" class="logo-link" style="font-size: 26px;">نور الهدى</a>
+            </div>
+        </header>
+
+        <div class="auth-container">
+            <div class="auth-box">
+                <h2 id="authTitle">تسجيل الدخول</h2>
+                
+                <div class="input-group">
+                    <label>اسم المستخدم</label>
+                    <input type="text" id="username" placeholder="اكتب اسمك هنا...">
+                </div>
+                
+                <div class="input-group">
+                    <label>كلمة المرور</label>
+                    <input type="password" id="password" placeholder="اكتب كلمة المرور...">
+                </div>
+
+                <div class="input-group" id="confirmGroup" style="display: none;">
+                    <label>تأكيد كلمة المرور</label>
+                    <input type="password" id="confirmPassword" placeholder="أعد كتابة كلمة المرور...">
+                </div>
+
+                <button class="auth-btn" id="actionBtn" onclick="handleAuth()">دخول</button>
+                
+                <p class="toggle-auth" onclick="toggleAuthMode()" id="toggleText">ليس لديك حساب؟ إنشاء حساب جديد</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/auth.js"></script> </body>
+</html>
