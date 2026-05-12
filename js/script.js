@@ -65,9 +65,9 @@ function loadPrayers(){
     if(["Mecca","Medina"].includes(city)) country = "Saudi Arabia";
     if(city === "Kuwait") country = "Kuwait";
 
-    let url = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=2`;
+    let url = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=5`;
     if(city === "New Assiut City"){
-        url = "https://api.aladhan.com/v1/timings?latitude=27.18&longitude=31.17&method=2";
+        url = "https://api.aladhan.com/v1/timings?latitude=27.18&longitude=31.17&method=5";
     }
 
     const xhr = new XMLHttpRequest();
